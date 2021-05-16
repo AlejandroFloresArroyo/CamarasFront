@@ -1,17 +1,42 @@
-<mat-card class="card">
-  <mat-card-header>
-    <mat-card-title> Sistema de fotos para KeysCon </mat-card-title>
-  </mat-card-header>
-    <mat-card-content>
-      <mat-form-field  class="w100 mx" appearance="standard" color="accent">
-        <mat-label>Ingresa tu código</mat-label>
-        <input matInput type="text" placeholder="123456" [(ngModel)]="codigo">
-        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-        <mat-hint>Lo puedes encontrar en tu ticket de compra</mat-hint>
-      </mat-form-field>
-      <br>
-    </mat-card-content>
-    <mat-card-actions class="w100">
-      <button (click)="enviar()" class="ml-auto" mat-stroked-button color="accent">¡Mira tus fotos!</button>
-    </mat-card-actions>
-</mat-card>
+<div
+  class="darker-span"
+  style="
+    height: 100vh;
+    background-image: url('/assets/img/arenal.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  "
+>
+  <div class="container pt-5 align-middle m-auto">
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title> Sistema de fotos</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-form-field class="w-100" appearance="standard" color="accent">
+          <mat-label>Ingresa tu código</mat-label>
+          <input
+            matInput
+            type="text"
+            placeholder="123456"
+            [(ngModel)]="codigo"
+          />
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <mat-hint>Lo puedes encontrar en tu ticket de compra</mat-hint>
+        </mat-form-field>
+        <br />
+      </mat-card-content>
+      <mat-card-actions class="w100">
+        <button
+          (click)="enviar()"
+          class="ml-auto"
+          mat-stroked-button
+          color="accent"
+        >
+          ¡Mira tus fotos!
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
